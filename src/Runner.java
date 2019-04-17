@@ -30,12 +30,12 @@ public class Runner {
         System.out.println("Сортировка по Названию:");
         Arrays.sort(milks);
         for(int i = 0; i < milks.length; i++){
-            System.out.println(milks[i].getName() +";"+ milks[i].getPercent() +";"+ milks[i].getAvailability());
+            System.out.println(milks[i].toString());
         }
         System.out.println("Сортировка по проценту жирности:");
         Arrays.sort(milks,Milk.PercentComparator);
         for(int i = 0; i < milks.length; i++) {
-            System.out.println(milks[i].getName() + ";" + milks[i].getPercent() + ";" + milks[i].getAvailability());
+            System.out.println(milks[i].toString());
         }
 
         int a = 0;

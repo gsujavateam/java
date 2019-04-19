@@ -1,22 +1,18 @@
 package by.gsu.pms;
 
 public class Density {
-    private String name;
+    private final static String name = "wire";
     private Name material;
     private double volume;
 
     public Density(){}
 
-    public Density(String densityName,Name densityMaterial,double densityVolume){
-        this.name=densityName;
+    public Density(Name densityMaterial,double densityVolume){
         this.material = densityMaterial;
-        this.volume=densityVolume;
+        this.volume = densityVolume;
 
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getName() {
         return name;

@@ -7,11 +7,11 @@ import by.gsu.pms.Name;
 public class Runner {
 
     public static void main(String[] args){
-        Density density = new Density("Wire",new Name("Steel",7850),0.03);
+        Density density = new Density(Name.STEEL,0.03);
         System.out.println(density);
-        density.setMaterial(new Name("Cuprum",8500));
+        density.setMaterial(Name.COPPER);
         System.out.println(density.getMass());
-        density.setMaterial(new Name("Steel",7850));
+        density.setMaterial(Name.STEEL);
         System.out.println(density);
 
 

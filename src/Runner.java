@@ -1,6 +1,7 @@
 import by.gsu.pms.Milk;
 import java.util.Arrays;
 
+import static com.sun.org.apache.bcel.internal.classfile.Utility.printArray;
 
 
 public class Runner {
@@ -25,17 +26,17 @@ public class Runner {
         }
         double percentMilk = resultpercent / milks.length;
         System.out.println("Средний процент жирности " + percentMilk);
-        System.out.println("Вывод массива:\n"+Arrays.toString(milks));
+        System.out.println("Вывод массива:\n"+printArray(milks));
 
         System.out.println("Сортировка по Названию:");
         Arrays.sort(milks);
         for(int i = 0; i < milks.length; i++){
-            System.out.println(milks[i].toString());
+            System.out.println(milks[i]);
         }
         System.out.println("Сортировка по проценту жирности:");
         Arrays.sort(milks,Milk.PercentComparator);
         for(int i = 0; i < milks.length; i++) {
-            System.out.println(milks[i].toString());
+            System.out.println(milks[i]);
         }
 
         int a = 0;
